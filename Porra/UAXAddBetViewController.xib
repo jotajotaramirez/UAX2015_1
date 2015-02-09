@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UAXAddBetViewController">
+            <connections>
+                <outlet property="name" destination="aaz-Sf-QXg" id="4Jg-Hd-4l1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aaz-Sf-QXg">
+                    <rect key="frame" x="8" y="100" width="304" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DUz-YP-RmG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participante" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I05-mr-XAn">
+                    <rect key="frame" x="8" y="71" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="JgP-q6-fNO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8u-RE-rfF">
+                    <rect key="frame" x="8" y="179" width="61" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GOC-1z-bam"/>
+                        <constraint firstAttribute="width" constant="61" id="RXc-Ik-OOI"/>
+                    </constraints>
+                    <state key="normal" title="1">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addNewBet:" destination="-1" eventType="touchUpInside" id="TF6-d4-1kH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFa-3X-8se">
+                    <rect key="frame" x="130" y="179" width="61" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="EzV-Fp-Uhb"/>
+                        <constraint firstAttribute="width" constant="61" id="fu2-Iw-15f"/>
+                    </constraints>
+                    <state key="normal" title="X">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addNewBet:" destination="-1" eventType="touchUpInside" id="Knu-Va-oD4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8s-VR-Keb">
+                    <rect key="frame" x="251" y="179" width="61" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wUA-yV-KBk"/>
+                        <constraint firstAttribute="width" constant="61" id="yn0-wF-Afg"/>
+                    </constraints>
+                    <state key="normal" title="2">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addNewBet:" destination="-1" eventType="touchUpInside" id="jPu-dQ-mpG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apuesta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyg-WI-pYq">
+                    <rect key="frame" x="8" y="150" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="SSe-Zr-WBI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Wyg-WI-pYq" firstAttribute="top" secondItem="aaz-Sf-QXg" secondAttribute="bottom" constant="20" id="3sb-Xs-0Bj"/>
+                <constraint firstItem="I05-mr-XAn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="8B4-62-Mx5"/>
+                <constraint firstItem="aaz-Sf-QXg" firstAttribute="top" secondItem="I05-mr-XAn" secondAttribute="top" id="9TI-lg-9rI"/>
+                <constraint firstAttribute="trailing" secondItem="aaz-Sf-QXg" secondAttribute="trailing" constant="8" id="BNB-id-wSZ"/>
+                <constraint firstItem="nFa-3X-8se" firstAttribute="top" secondItem="Wyg-WI-pYq" secondAttribute="bottom" constant="8" id="EF0-pz-lLP"/>
+                <constraint firstItem="P8s-VR-Keb" firstAttribute="top" secondItem="Wyg-WI-pYq" secondAttribute="bottom" constant="8" id="Eh9-V4-Nrr"/>
+                <constraint firstItem="I05-mr-XAn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ISo-YL-eEg"/>
+                <constraint firstAttribute="trailing" secondItem="I05-mr-XAn" secondAttribute="trailing" constant="8" id="Up0-uX-SsX"/>
+                <constraint firstItem="aaz-Sf-QXg" firstAttribute="top" secondItem="I05-mr-XAn" secondAttribute="bottom" constant="8" id="b1I-S4-bX3"/>
+                <constraint firstAttribute="centerX" secondItem="nFa-3X-8se" secondAttribute="centerX" id="bnt-ei-bAo"/>
+                <constraint firstItem="aaz-Sf-QXg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="bzW-oe-ck6"/>
+                <constraint firstItem="r8u-RE-rfF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="hfJ-cp-SHv"/>
+                <constraint firstItem="aaz-Sf-QXg" firstAttribute="top" secondItem="I05-mr-XAn" secondAttribute="bottom" constant="8" id="iHp-RI-A7t"/>
+                <constraint firstItem="I05-mr-XAn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="oFB-ON-M3Q"/>
+                <constraint firstAttribute="trailing" secondItem="P8s-VR-Keb" secondAttribute="trailing" constant="8" id="qWQ-TI-U77"/>
+                <constraint firstAttribute="trailing" secondItem="Wyg-WI-pYq" secondAttribute="trailing" constant="8" id="sYG-rw-fd9"/>
+                <constraint firstItem="Wyg-WI-pYq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="t49-NT-EvS"/>
+                <constraint firstItem="r8u-RE-rfF" firstAttribute="top" secondItem="Wyg-WI-pYq" secondAttribute="bottom" constant="8" id="vBR-sL-UXO"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9TI-lg-9rI"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
